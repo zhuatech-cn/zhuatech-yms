@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-label="知华科技园区与月台管理 YMS产品概览">
+<rect width="1200" height="520" rx="28" fill="#f5f7f9"/>
+<rect x="32" y="32" width="1136" height="112" rx="20" fill="#376b3e"/>
+<text x="72" y="79" font-family="Arial,'PingFang SC',sans-serif" font-size="22" fill="#dbe7ed">ZHUATECH · YARD MANAGEMENT SYSTEM</text>
+<text x="72" y="122" font-family="Arial,'PingFang SC',sans-serif" font-size="34" font-weight="700" fill="#fff">知华科技园区与月台管理 YMS</text>
+
+<path d="M160 400H1040" stroke="#376b3e" stroke-width="3" stroke-dasharray="8 10"/>
+<circle cx="170" cy="400" r="8" fill="#376b3e"/><circle cx="600" cy="400" r="8" fill="#376b3e"/><circle cx="1030" cy="400" r="8" fill="#376b3e"/>
+<text x="70" y="454" font-family="Arial,'PingFang SC',sans-serif" font-size="18" fill="#43515a">业务台账与状态机</text>
+<text x="510" y="454" font-family="Arial,'PingFang SC',sans-serif" font-size="18" fill="#43515a">企业控制与审计</text>
+<text x="900" y="454" font-family="Arial,'PingFang SC',sans-serif" font-size="18" fill="#43515a">外部系统适配器</text>
+<text x="70" y="493" font-family="Arial,'PingFang SC',sans-serif" font-size="15" fill="#74828a">上海如静知华信息科技有限公司 · https://www.zhuatech.cn/</text>
+</svg>
+
