@@ -1,0 +1,88 @@
+{
+  "slug": "yms",
+  "title": "月台服务与车辆等候容量测算",
+  "fields": [
+    {
+      "key": "id",
+      "label": "记录编号",
+      "type": "ID"
+    },
+    {
+      "key": "docks",
+      "label": "可用月台数",
+      "type": "NUMBER",
+      "scale": 0,
+      "min": "0",
+      "max": "10000"
+    },
+    {
+      "key": "windowMinutes",
+      "label": "预约窗口分钟",
+      "type": "NUMBER",
+      "scale": 0,
+      "min": "0",
+      "max": "10080"
+    },
+    {
+      "key": "minutesPerTruck",
+      "label": "单车作业分钟",
+      "type": "NUMBER",
+      "scale": 0,
+      "min": "1",
+      "max": "10080"
+    },
+    {
+      "key": "bookedTrucks",
+      "label": "预约车辆数",
+      "type": "NUMBER",
+      "scale": 0,
+      "min": "0",
+      "max": "1000000"
+    },
+    {
+      "key": "queueAllowance",
+      "label": "允许待排车辆数",
+      "type": "NUMBER",
+      "scale": 0,
+      "min": "0",
+      "max": "1000000"
+    }
+  ],
+  "columns": [
+    {
+      "key": "trucksPerDock",
+      "label": "每月台窗口可服务车数"
+    },
+    {
+      "key": "windowCapacity",
+      "label": "窗口可服务车数"
+    },
+    {
+      "key": "queuedTrucks",
+      "label": "窗口外待排车辆"
+    },
+    {
+      "key": "queueOverAllowance",
+      "label": "超容限待排车数"
+    }
+  ],
+  "description": "用月台数量、开放时长和单车作业分钟计算可服务车辆数，识别预约超容量和输入的最大排队容限。",
+  "owner": "上海如静知华信息科技有限公司",
+  "website": "https://www.zhuatech.cn/",
+  "authorization": "商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。",
+  "version": 1,
+  "notes": "输入均须为已获授权的同口径数据。金额固定人民币元；比例为百分数。核算结果只用于复核，未审批、未写库、未发起外部调用，也未触发付款、签名、资料销毁或设备控制。建议不构成法律、安全、会计或碳核证结论。",
+  "sample": {
+    "asOf": "2026-10-23",
+    "records": [
+      {
+        "id": "ITEM-001",
+        "docks": "4",
+        "windowMinutes": "120",
+        "minutesPerTruck": "30",
+        "bookedTrucks": "15",
+        "queueAllowance": "2"
+      }
+    ]
+  }
+}

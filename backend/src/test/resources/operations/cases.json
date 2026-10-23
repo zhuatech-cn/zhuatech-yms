@@ -1,0 +1,56 @@
+[
+  {
+    "patch": {},
+    "expected": {
+      "decision": "PASS",
+      "windowCapacity": "#16",
+      "queuedTrucks": "#0"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "bookedTrucks": "18"
+    },
+    "expected": {
+      "decision": "REVIEW",
+      "queuedTrucks": "#2"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "bookedTrucks": "19"
+    },
+    "expected": {
+      "decision": "HOLD"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "windowMinutes": "119"
+    },
+    "expected": {
+      "decision": "HOLD",
+      "windowCapacity": "#12"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "docks": "0"
+    },
+    "expected": {
+      "decision": "HOLD"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "minutesPerTruck": "0"
+    },
+    "expected": {},
+    "error": true
+  }
+]
